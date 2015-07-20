@@ -187,6 +187,12 @@ a.pure-button-primary, .pure-button-primary {
     }
   }
 
+  @media only screen and (max-width: 480px) {
+    button[type="submit"] {
+      margin: 0;
+    }
+  }
+
   .pure-control-group.control-group-with-error {
     input {
       color: #b94a48;
