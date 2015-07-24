@@ -1,4 +1,4 @@
-require "exo2-rails/version"
+require "pure-css-reset-rails/version"
 
 module PureCssReset
   module Rails
