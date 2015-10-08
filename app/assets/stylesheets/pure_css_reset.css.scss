@@ -208,6 +208,10 @@ a.pure-button-primary, .pure-button-primary {
     input:last-child {
       border-radius: 0;
     }
+
+    input:first-child:last-child {
+      border-radius: 0;
+    }
   }
 }
 
