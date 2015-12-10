@@ -8,7 +8,7 @@ Gem::Specification.new do |s|
   s.version       = PureCSS::Reset::Rails::VERSION
   s.date          = '2015-12-10'
   s.summary       = "Resets some CSS and adds some useful classes that Pure CSS lacks."
-  s.description   = "pure-css-rails-reset resets some CSS and adds some useful classes that Pure CSS lacks."
+  s.description   = "pure-css-reset-rails resets some CSS and adds some useful classes that Pure CSS lacks."
 
   s.authors       = ["Grant Colegate"]
   s.email         = ['blaknite@thelanbox.com.au']
