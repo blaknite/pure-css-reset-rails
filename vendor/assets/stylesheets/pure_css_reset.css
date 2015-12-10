@@ -42,16 +42,16 @@ h6 {
   margin: 2em 0 0.8em 0;
 }
 
-.cf:before, .cf:after {
+.clear-fix:before, .clear-fix:after {
   content: " ";
   display: table;
 }
 
-.cf:after {
+.clear-fix:after {
   clear: both;
 }
 
-.cf {
+.clear-fix {
   *zoom: 1;
 }
 
