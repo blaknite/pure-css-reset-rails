@@ -212,6 +212,77 @@ a.pure-button-primary:hover, .pure-button-primary:hover {
   border-color: #4a9fc8;
 }
 
+.pure-form .input-wrapper {
+  border-collapse: separate;
+  display: table;
+  position: relative;
+}
+
+.pure-form .input-wrapper input[type="text"],
+.pure-form .input-wrapper input[type="password"],
+.pure-form .input-wrapper input[type="email"],
+.pure-form .input-wrapper input[type="url"],
+.pure-form .input-wrapper input[type="date"],
+.pure-form .input-wrapper input[type="month"],
+.pure-form .input-wrapper input[type="time"],
+.pure-form .input-wrapper input[type="datetime"],
+.pure-form .input-wrapper input[type="datetime-local"],
+.pure-form .input-wrapper input[type="week"],
+.pure-form .input-wrapper input[type="number"],
+.pure-form .input-wrapper input[type="search"],
+.pure-form .input-wrapper input[type="tel"],
+.pure-form .input-wrapper input[type="color"],
+.pure-form .input-wrapper textarea {
+  display: table-cell;
+  width: 100%;
+}
+
+.pure-form .input-wrapper .input-addon {
+  background: #efefef;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  display: table-cell;
+  line-height: normal;
+  min-width: 2em;
+  padding: 0;
+  text-align: center;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.pure-form .input-wrapper .input-addon.prefix {
+  border-right: 0;
+}
+
+.pure-form .input-wrapper .input-addon.suffix {
+  border-left: 0;
+}
+
+.pure-form .input-wrapper .input-addon img {
+  max-height: 1.5em;
+  width: auto;
+}
+
+.pure-form .input-wrapper .input-addon .addon-label {
+  float: none;
+  line-height: inherit;
+  margin: 0;
+  padding: 0 0.5em;
+  text-align: inherit;
+  text-transform: none;
+  width: auto;
+}
+
+.pure-form .input-wrapper .input-addon .addon-label .inline,
+.pure-from .input-wrapper .input-addon .addon-label label,
+.pure-form .input-wrapper .input-addon .addon-label input {
+  display: inline;
+  float: none;
+  margin: 0;
+  text-align: inherit;
+  width: auto;
+}
+
 @media only screen and (max-width: 480px) {
   .pure-form button[type="submit"] {
     margin: 0;
@@ -220,6 +291,10 @@ a.pure-button-primary:hover, .pure-button-primary:hover {
 
 .pure-form .pure-control-group.control-group-with-error input {
   color: #b94a48;
+  border-color: #ee5f5b;
+}
+
+.pure-form .pure-control-group.control-group-with-error .input-addon {
   border-color: #ee5f5b;
 }
 
@@ -274,7 +349,7 @@ a.pure-button-primary:hover, .pure-button-primary:hover {
     float: left;
     line-height: 2.3em;
   }
-  .pure-form-aligned .pure-input-wrapper {
+  .pure-form-aligned .input-wrapper {
     margin-left: 11em;
   }
 }
@@ -283,13 +358,13 @@ a.pure-button-primary:hover, .pure-button-primary:hover {
   .pure-form-aligned .pure-control-group label {
     width: 7em;
   }
-  .pure-form-aligned .pure-input-wrapper {
+  .pure-form-aligned .input-wrapper {
     margin-left: 8em;
   }
 }
 
 @media screen and (max-width: 480px) {
-  .pure-form-aligned .pure-input-wrapper {
+  .pure-form-aligned .input-wrapper {
     margin-left: 0;
   }
 }
