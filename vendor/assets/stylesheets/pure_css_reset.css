@@ -344,7 +344,7 @@ a.pure-button-primary:hover, .pure-button-primary:hover {
   }
 }
 
-@media only screen and (min-width: 480px) {
+@media only screen and (min-width: 35.5em) {
   .pure-form-aligned .pure-control-group label {
     float: left;
     line-height: 2.3em;
