@@ -157,6 +157,7 @@ a.pure-button-primary:hover, .pure-button-primary:hover {
   border-radius: 0;
   box-shadow: none;
   -webkit-appearance: none;
+  margin: 0;
 }
 
 @media only screen and (max-width: 480px) {
@@ -212,83 +213,6 @@ a.pure-button-primary:hover, .pure-button-primary:hover {
   border-color: #4a9fc8;
 }
 
-.pure-form .input-wrapper {
-  border-collapse: separate;
-  display: table;
-  position: relative;
-}
-
-.pure-form .input-wrapper input[type="text"],
-.pure-form .input-wrapper input[type="password"],
-.pure-form .input-wrapper input[type="email"],
-.pure-form .input-wrapper input[type="url"],
-.pure-form .input-wrapper input[type="date"],
-.pure-form .input-wrapper input[type="month"],
-.pure-form .input-wrapper input[type="time"],
-.pure-form .input-wrapper input[type="datetime"],
-.pure-form .input-wrapper input[type="datetime-local"],
-.pure-form .input-wrapper input[type="week"],
-.pure-form .input-wrapper input[type="number"],
-.pure-form .input-wrapper input[type="search"],
-.pure-form .input-wrapper input[type="tel"],
-.pure-form .input-wrapper input[type="color"],
-.pure-form .input-wrapper textarea {
-  display: table-cell;
-  width: 100%;
-}
-
-.pure-form .input-wrapper .input-addon {
-  background: #efefef;
-  border: 1px solid #ccc;
-  box-sizing: border-box;
-  display: table-cell;
-  line-height: normal;
-  min-width: 2em;
-  padding: 0;
-  text-align: center;
-  vertical-align: middle;
-  white-space: nowrap;
-}
-
-.pure-form .input-wrapper .input-addon.prefix {
-  border-right: 0;
-}
-
-.pure-form .input-wrapper .input-addon.suffix {
-  border-left: 0;
-}
-
-.pure-form .input-wrapper .input-addon img {
-  max-height: 1.5em;
-  width: auto;
-}
-
-.pure-form .input-wrapper .input-addon .addon-label {
-  float: none;
-  line-height: inherit;
-  margin: 0;
-  padding: 0 0.5em;
-  text-align: inherit;
-  text-transform: none;
-  width: auto;
-}
-
-.pure-form .input-wrapper .input-addon .addon-label .inline,
-.pure-from .input-wrapper .input-addon .addon-label label,
-.pure-form .input-wrapper .input-addon .addon-label input {
-  display: inline;
-  float: none;
-  margin: 0;
-  text-align: inherit;
-  width: auto;
-}
-
-@media only screen and (max-width: 480px) {
-  .pure-form button[type="submit"] {
-    margin: 0;
-  }
-}
-
 .pure-form .pure-control-group.control-group-with-error input {
   color: #b94a48;
   border-color: #ee5f5b;
@@ -310,63 +234,105 @@ a.pure-button-primary:hover, .pure-button-primary:hover {
   border-radius: 0;
 }
 
-.pure-form-aligned .hint, .pure-form-aligned .error {
-  margin-left: 12.3em;
-}
-
-@media (max-width: 63.9em) {
-  .pure-form-aligned .hint, .pure-form-aligned .error {
-    margin-left: 9em;
-  }
-}
-
-@media (max-width: 480px) {
-  .pure-form-aligned .hint, .pure-form-aligned .error {
-    margin-left: 0;
-  }
-}
-
 .pure-form-aligned .pure-controls {
   margin-top: 1em;
   margin-left: 0;
-  padding-left: 11em;
 }
 
-@media screen and (max-width: 63.9em) {
+@media screen and (min-width: 35.5em) {
   .pure-form-aligned .pure-controls {
-    padding-left: 8em;
+    padding-left: 12em;
   }
 }
 
-@media only screen and (max-width: 480px) {
-  .pure-form-aligned .pure-controls {
-    padding-left: 0;
-  }
+.pure-form-aligned .pure-control-group label {
+  text-align: left;
+}
+.pure-form-aligned .input-wrapper {
+  margin-left: 0;
 }
 
 @media only screen and (min-width: 35.5em) {
   .pure-form-aligned .pure-control-group label {
     float: left;
     line-height: 2.3em;
+    width: 11em;
+    text-align: right;
   }
   .pure-form-aligned .input-wrapper {
-    margin-left: 11em;
+    margin-left: 12em;
   }
 }
 
-@media screen and (max-width: 63.9em) {
-  .pure-form-aligned .pure-control-group label {
-    width: 7em;
-  }
-  .pure-form-aligned .input-wrapper {
-    margin-left: 8em;
-  }
+.pure-form .addon-wrapper {
+  border-collapse: separate;
+  display: table;
+  position: relative;
 }
 
-@media screen and (max-width: 480px) {
-  .pure-form-aligned .input-wrapper {
-    margin-left: 0;
-  }
+.pure-form .addon-wrapper input[type="text"],
+.pure-form .addon-wrapper input[type="password"],
+.pure-form .addon-wrapper input[type="email"],
+.pure-form .addon-wrapper input[type="url"],
+.pure-form .addon-wrapper input[type="date"],
+.pure-form .addon-wrapper input[type="month"],
+.pure-form .addon-wrapper input[type="time"],
+.pure-form .addon-wrapper input[type="datetime"],
+.pure-form .addon-wrapper input[type="datetime-local"],
+.pure-form .addon-wrapper input[type="week"],
+.pure-form .addon-wrapper input[type="number"],
+.pure-form .addon-wrapper input[type="search"],
+.pure-form .addon-wrapper input[type="tel"],
+.pure-form .addon-wrapper input[type="color"],
+.pure-form .addon-wrapper textarea {
+  display: table-cell;
+  width: 100%;
+}
+
+.pure-form .addon-wrapper .input-addon {
+  background: #efefef;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  display: table-cell;
+  line-height: normal;
+  min-width: 2em;
+  padding: 0;
+  text-align: center;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.pure-form .addon-wrapper .input-addon.prefix {
+  border-right: 0;
+}
+
+.pure-form .addon-wrapper .input-addon.suffix {
+  border-left: 0;
+}
+
+.pure-form .addon-wrapper .input-addon img {
+  max-height: 1.5em;
+  width: auto;
+}
+
+.pure-form .addon-wrapper .input-addon .addon-label {
+  float: none;
+  line-height: inherit;
+  margin: 0;
+  padding: 0 0.5em;
+  text-align: inherit;
+  text-transform: none;
+  width: auto;
+}
+
+.pure-form .addon-wrapper .input-addon .addon-label .inline,
+.pure-from .addon-wrapper .input-addon .addon-label label,
+.pure-form .addon-wrapper .input-addon .addon-label input {
+  display: inline;
+  float: none;
+  margin: 0;
+  text-align: inherit;
+  width: auto;
 }
 
 @media screen and (max-width: 47.9em) {
