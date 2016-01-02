@@ -339,6 +339,7 @@ a.pure-button-primary:hover, .pure-button-primary:hover {
   margin: 0;
   text-align: inherit;
   width: auto;
+  line-height: normal;
 }
 
 @media screen and (max-width: 47.9em) {
