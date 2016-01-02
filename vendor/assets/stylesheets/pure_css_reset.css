@@ -139,6 +139,12 @@ a.pure-button-primary:hover, .pure-button-primary:hover {
   color: #b94a48;
 }
 
+@media only screen and (max-width: 480px) {
+  .pure-form button[type="submit"] {
+    margin: 0;
+  }
+}
+
 .pure-form input[type="text"],
 .pure-form input[type="password"],
 .pure-form input[type="email"],
