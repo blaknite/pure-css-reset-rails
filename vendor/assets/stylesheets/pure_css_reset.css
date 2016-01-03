@@ -309,18 +309,18 @@ input[type="file"] {
   box-sizing: border-box;
   display: table-cell;
   line-height: normal;
-  min-width: 2em;
+  width: 1%;
   padding: 0;
   text-align: center;
   vertical-align: middle;
   white-space: nowrap;
 }
 
-.pure-form .addon-wrapper .input-addon.prefix {
+.pure-form .addon-wrapper .input-addon:first-child {
   border-right: 0;
 }
 
-.pure-form .addon-wrapper .input-addon.suffix {
+.pure-form .addon-wrapper .input-addon:last-child {
   border-left: 0;
 }
 
