@@ -282,6 +282,7 @@ input[type="file"] {
   border-collapse: separate;
   display: table;
   position: relative;
+  line-height: normal;
 }
 
 .pure-form .addon-wrapper input[type="text"],
