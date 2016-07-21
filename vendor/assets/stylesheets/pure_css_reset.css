@@ -90,6 +90,29 @@ h6 {
   top: -1px;
 }
 
+.pure-button-group {
+  /* To prevent whitespace, the following rules are from Pure CSS's .pure-g */
+  letter-spacing: -0.31em; /* Webkit: collapse white-space between units */
+  *letter-spacing: normal; /* reset IE < 8 */
+  *word-spacing: -0.43em; /* IE < 8: collapse white-space between units */
+  text-rendering: optimizespeed; /* Webkit: fixes text-rendering: optimizeLegibility */
+}
+
+.pure-button-group .pure-button {
+  /* The following rules are from Pure CSS's .pure-u */
+   display: inline-block;
+   *display: inline; /* IE < 8: fake inline-block */
+   zoom: 1;
+   letter-spacing: normal;
+   word-spacing: normal;
+   vertical-align: top;
+   text-rendering: auto;
+}
+
+.pure-button-group .pure-button:not(:first-of-type) {
+  border-left: 0;
+}
+
 .pure-button:hover {
   color: #555555;
 }
