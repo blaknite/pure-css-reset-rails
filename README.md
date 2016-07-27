@@ -18,7 +18,7 @@ What it does:
 
 1. Add this to your Gemfile
 
-    `gem "pure-css-rails-reset"`
+    `gem "pure-css-reset-rails"`
 
 2. Run
 
